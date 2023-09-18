@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+</head>
+<body>
+    <h1>User Registration</h1>
+    <form action="/register" method="POST">
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" required><br><br>
+        
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" name="email" required><br><br>
+        
+        <label for="mobileNumber">Mobile Number:</label>
+        <input type="number" name="mobileNumber" required><br><br>
+        
+        <label for="adhaarCardNumber">Aadhaar Card Number:</label>
+        <input type="number" name="adhaarCardNumber" required><br><br>
+        
+        <label for="dateOfBirth">Date of Birth:</label>
+        <input type="date" name="dateOfBirth" required><br><br>
+        
+        <label for="userType">User Type (1 for Lawyer, 2 for Judge, 3 for User):</label>
+        <input type="number" name="userType" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" name="password" required><br><br>
+        
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" name="confirmPassword" required><br><br>
+        
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
