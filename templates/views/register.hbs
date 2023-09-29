@@ -1,39 +1,261 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Registration</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <style>
+    /* Your CSS styles here */
+  </style>
 </head>
+
+
 <body>
-    <h1>User Registration</h1>
-    <form action="/register" method="POST">
-        <label for="firstName">First Name:</label>
-        <input type="text" name="firstName" required><br><br>
-        
-        <label for="lastName">Last Name:</label>
-        <input type="text" name="lastName" required><br><br>
-        
-        <label for="email">Email:</label>
-        <input type="email" name="email" required><br><br>
-        
-        <label for="mobileNumber">Mobile Number:</label>
-        <input type="number" name="mobileNumber" required><br><br>
-        
-        <label for="adhaarCardNumber">Aadhaar Card Number:</label>
-        <input type="number" name="adhaarCardNumber" required><br><br>
-        
-        <label for="dateOfBirth">Date of Birth:</label>
-        <input type="date" name="dateOfBirth" required><br><br>
-        
-        <label for="userType">User Type (1 for Lawyer, 2 for Judge, 3 for User):</label>
-        <input type="number" name="userType" required><br><br>
-        
-        <label for="password">Password:</label>
-        <input type="password" name="password" required><br><br>
-        
-        <label for="confirmPassword">Confirm Password:</label>
-        <input type="password" name="confirmPassword" required><br><br>
-        
-        <input type="submit" value="Register">
-    </form>
+  <form action="/register" method="post">
+    <div style="
+          width: 1440px;
+          height: 1024px;
+          position: relative;
+          background: #925fe2;
+          border-radius: 24px;
+          overflow: hidden;
+        ">
+      <!-- Background shapes -->
+      <div style="
+            width: 1279.24px;
+            height: 946.96px;
+            left: 521px;
+            top: 821.37px;
+            position: absolute;
+            transform: rotate(-26.48deg);
+            transform-origin: 0 0;
+            background: #9c6fe4;
+          "></div>
+      <div style="
+            width: 421.18px;
+            height: 389px;
+            left: 459px;
+            top: 245px;
+            position: absolute;
+            background: #9c6fe4;
+          "></div>
+      <div style="
+            width: 270.9px;
+            height: 303.56px;
+            left: 627px;
+            top: 809.2px;
+            position: absolute;
+            transform: rotate(-49.89deg);
+            transform-origin: 0 0;
+            background: rgba(156, 111, 228, 0.6);
+          "></div>
+
+      <!-- Left content -->
+      <div style="
+            width: 630px;
+            height: 1024px;
+            left: 0px;
+            top: 0px;
+            position: absolute;
+            background: #1c1d21;
+            border-top-left-radius: 24px;
+            border-top-right-radius: 24px;
+            overflow: hidden;
+          ">
+        <!-- Signup form -->
+
+        <div style="
+              width: 400px;
+              margin: 80px auto;
+              text-align: center;
+            ">
+          <h1 style="
+                color: white;
+                font-size: 36px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 700;
+              ">Signup</h1>
+          <p style="
+                color: rgba(255, 255, 255, 0.7);
+                font-size: 16px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+              ">Enter your account details</p>
+
+          <!-- Input fields -->
+          <div style="
+                margin-top: 24px;
+              ">
+            <input type="text" class="name" name="firstName" placeholder="Name" value="">
+          </div>
+          <div style="
+                margin-top: 16px;
+              ">
+            <input type="text" class="lastname" name="lastName" placeholder="Last Name" value="">
+          </div>
+          <div style="
+                margin-top: 16px;
+              ">
+            <input type="email" class="email" name="email" placeholder="Email" value="">
+          </div>
+          <div style="
+                margin-top: 16px;
+              ">
+            <input type="text" class="number" name="mobileNumber" placeholder="Phone Number" value="">
+          </div>
+          <div style="
+                margin-top: 16px;
+              ">
+            <input type="text" class="gender" name="gender" placeholder="Gender" value="">
+          </div>
+          <div style="
+                margin-top: 16px;
+              ">
+            <input type="text" class="number" name="age" placeholder="Age" value="">
+          </div>
+          <div style="
+                margin-top: 16px;
+              ">
+            <input type="text" class="category" name="category" placeholder="Category" value="">
+          </div>
+          <div style="
+                margin-top: 16px;
+              ">
+            <input type="text" class="aadhar" name="adhaarCardNumber" placeholder="Aadhar Number" value="">
+          </div>
+          <div style="
+                margin-top: 16px;
+              ">
+            <input type="password" class="password" name="password"  placeholder="Password" value="">
+          </div>
+
+          <!-- Signup button -->
+          <div style="
+                margin-top: 24px;
+              ">
+            <button type="button" onclick="func()" style="
+                  background: #9c6fe4;
+                  color: white;
+                  font-size: 16px;
+                  font-family: 'Poppins', sans-serif;
+                  font-weight: 400;
+                  padding: 12px 24px;
+                  border: none;
+                  border-radius: 12px;
+                  cursor: pointer;
+                ">Signup</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right content -->
+      <div style="
+            left: 730px;
+            top: 155px;
+            position: absolute;
+            text-align: left;
+          ">
+        <h1 style="
+              color: #eeeeee;
+              font-size: 80px;
+              font-family: 'Poppins', sans-serif;
+              font-weight: 700;
+              line-height: 70px;
+            ">Welcome To <br>Our website</h1>
+        <p style="
+              color: #eeeeee;
+              font-size: 16px;
+              font-family: 'Poppins', sans-serif;
+              font-weight: 500;
+            ">Login to access your account</p>
+      </div>
+
+      <!-- Login link -->
+      <div style="
+            left: 128px;
+            top: 912px;
+            position: absolute;
+            text-align: left;
+          ">
+        <p style="
+              color: rgba(255, 255, 255, 0.5);
+              font-size: 16px;
+              font-family: 'Poppins', sans-serif;
+              font-weight: 400;
+            ">Already have an account?</p>
+        <button type="button" onclick="login()" style="
+              background: #333437;
+              color: white;
+              font-size: 16px;
+              font-family: 'Poppins', sans-serif;
+              font-weight: 400;
+              padding: 12px 24px;
+              border: none;
+              border-radius: 8px;
+              cursor: pointer;
+            ">Login</button>
+      </div>
+
+      <!-- Placeholder image -->
+      <img style="
+            width: 810px;
+            height: 647px;
+            left: 630px;
+            top: 368px;
+            position: absolute;
+          " src="https://via.placeholder.com/810x647" alt="Placeholder Image">
+
+      <!-- Icon -->
+      <div style="
+            width: 24px;
+            height: 24px;
+            left: 483px;
+            top: 740px;
+            position: absolute;
+          ">
+        <div style="
+              width: 24px;
+              height: 16.5px;
+              left: 0px;
+              top: 3.75px;
+              position: absolute;
+              background: rgba(255, 255, 255, 0.5);
+            "></div>
+        <div style="
+              width: 19.06px;
+              height: 19.06px;
+              left: 2.47px;
+              top: 2.47px;
+              position: absolute;
+              background: rgba(255, 255, 255, 0.5);
+            "></div>
+      </div>
+
+      <!-- Divider line -->
+      <div style="
+            width: 381px;
+            height: 0px;
+            left: 128px;
+            top: 790px;
+            position: absolute;
+            border: 1px rgba(255, 255, 255, 0.4) solid;
+          "></div>
+    </div>
+  </form>
+
+
+  <script>
+    function func() {
+      // Submit the form when the Signup button is clicked
+      document.querySelector('form').submit();
+    }
+
+    function login() {
+      var newHTMLFileURL = "login.html";
+      window.location.href = newHTMLFileURL;
+    }
+  </script>
 </body>
+
 </html>
+

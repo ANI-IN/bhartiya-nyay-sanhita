@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <script>
+    function forgotpass() {
+      // Specify the URL of the new HTML file you want to open
+      var newHTMLFileURL = "login.html";
+
+      // Change the current page's location to the new HTML file URL
+      window.location.href = newHTMLFileURL;
+    }
+  </script>
+</head>
+
+<body>
+  <form id="login" action="/login" method="post">
+    <!-- Your styling and content here -->
+    <div
+      style="
+        width: 1440px;
+        height: 1024px;
+        position: relative;
+        background: #925fe2;
+        border-radius: 24px;
+        overflow: hidden;
+      ">
+      <!-- Your design elements here -->
+    </div>
+    <div
+      style="
+        left: 128px;
+        top: 314px;
+        position: absolute;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 48px;
+        display: inline-flex;
+      ">
+      <div
+        style="
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          gap: 24px;
+          display: flex;
+        ">
+        <div
+          style="
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 48px;
+            display: flex;
+          ">
+          <div
+            style="
+              flex-direction: column;
+              justify-content: flex-start;
+              align-items: flex-start;
+              gap: 12px;
+              display: flex;
+            ">
+            <div
+              style="
+                color: white;
+                font-size: 48px;
+                font-family: Poppins;
+                font-weight: 700;
+                word-wrap: break-word;
+              ">
+              Login
+            </div>
+            <div
+              style="
+                color: rgba(255, 255, 255, 0.7);
+                font-size: 16px;
+                font-family: Poppins;
+                font-weight: 500;
+                word-wrap: break-word;
+              ">
+              Enter your account details
+            </div>
+          </div>
+          <div
+            style="
+              flex-direction: column;
+              justify-content: flex-start;
+              align-items: flex-start;
+              gap: 24px;
+              display: flex;
+            ">
+            <div
+              style="
+                height: 36px;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 12px;
+                display: flex;
+              ">
+              <div
+                style="
+                  color: rgba(255, 255, 255, 0.5);
+                  font-size: 16px;
+                  font-family: Poppins;
+                  font-weight: 400;
+                  word-wrap: break-word;
+                ">
+                <input
+                  type="email"
+                  class="username"
+                  placeholder="Username"
+                  name="email"
+                  value=""
+                />
+              </div>
+              <div
+                style="
+                  width: 381px;
+                  height: 0px;
+                  border: 1px rgba(255, 255, 255, 0.4) solid;
+                ">
+              </div>
+            </div>
+            <div
+              style="
+                height: 36px;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 12px;
+                display: flex;
+              ">
+              <div
+                style="
+                  justify-content: flex-start;
+                  align-items: flex-start;
+                  gap: 280px;
+                  display: inline-flex;
+                ">
+                <div
+                  style="
+                    color: rgba(255, 255, 255, 0.5);
+                    font-size: 16px;
+                    font-family: Poppins;
+                    font-weight: 400;
+                    word-wrap: break-word;
+                  ">
+                  <input
+                    type="password"
+                    class="password"
+                    placeholder="Password"
+                    name="password" 
+                    value=""
+                  />
+                </div>
+                <div style="width: 24px; height: 24px; position: relative">
+                  <div
+                    style="
+                      width: 24px;
+                      height: 16.5px;
+                      left: 0px;
+                      top: 3.75px;
+                      position: absolute;
+                      background: rgba(255, 255, 255, 0.5);
+                    ">
+                  </div>
+                  <div
+                    style="
+                      width: 19.06px;
+                      height: 19.06px;
+                      left: 2.47px;
+                      top: 2.47px;
+                      position: absolute;
+                      background: rgba(255, 255, 255, 0.5);
+                    ">
+                  </div>
+                </div>
+              </div>
+              <div
+                style="
+                  width: 381px;
+                  height: 0px;
+                  border: 1px rgba(255, 255, 255, 0.4) solid;
+                ">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 16px;
+            font-family: Poppins;
+            font-weight: 400;
+            word-wrap: break-word;
+          "onclick="forgotpass()">
+          Forgot Password?
+        </div>
+      </div>
+      <div
+        style="
+          width: 393px;
+          padding-top: 12px;
+          padding-bottom: 12px;
+          background: #9c6fe4;
+          border-radius: 12px;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          display: inline-flex;
+        ">
+        <button
+          type="button"
+          style="
+            color: white;
+            font-size: 16px;
+            font-family: Poppins;
+            font-weight: 400;
+            word-wrap: break-word;
+            background: none;
+            border: none;
+            cursor: pointer;
+          "
+          onclick="func()"
+        >
+          Login
+        </button>
+      </div>
+    </div>
+    <div
+      style="
+        left: 730px;
+        top: 155px;
+        position: absolute;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 12px;
+        display: inline-flex;
+      "
+    >
+      <div
+        style="
+          color: #eeeeee;
+          font-size: 80px;
+          font-family: Poppins;
+          font-weight: 700;
+          line-height: 70px;
+          word-wrap: break-word;
+        "
+      >
+        Welcome To <br />Our website
+      </div>
+      <div
+        style="
+          color: #eeeeee;
+          font-size: 16px;
+          font-family: Poppins;
+          font-weight: 500;
+          word-wrap: break-word;
+        "
+      >
+        Login to access your account
+      </div>
+    </div>
+    <div
+      style="
+        left: 128px;
+        top: 912px;
+        position: absolute;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 67px;
+        display: inline-flex;
+      "
+    >
+      <div
+        style="
+          color: rgba(255, 255, 255, 0.5);
+          font-size: 16px;
+          font-family: Poppins;
+          font-weight: 400;
+          word-wrap: break-word;
+        "
+      >
+        Don’t have an account?
+      </div>
+      <div
+        style="
+          height: 48px;
+          padding-left: 24px;
+          padding-right: 24px;
+          padding-top: 12px;
+          padding-bottom: 12px;
+          background: #333437;
+          border-radius: 8px;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          display: flex;
+        "
+      >
+        <div
+          style="
+            color: white;
+            font-size: 16px;
+            font-family: Poppins;
+            font-weight: 400;
+            word-wrap: break-word;
+          "
+        >
+          Sign up
+        </div>
+      </div>
+    </div>
+    <img
+      style="
+        width: 810px;
+        height: 647px;
+        left: 630px;
+        top: 368px;
+        position: absolute;
+      "
+      src="https://via.placeholder.com/810x647"
+    />
+  </form>
+  <script>
+    function func() {
+      document.getElementById("login").submit();
+    }
+  </script>
+</body>
+</html>
