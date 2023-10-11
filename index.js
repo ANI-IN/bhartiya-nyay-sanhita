@@ -33,6 +33,9 @@ app.get('/register', (req, res) => {
   res.render('register');
 });
 
+app.get('/judge', (req, res) => {
+  res.render('judge');
+});
 
 
 app.post("/register", async (req, res) => {
@@ -61,7 +64,7 @@ app.post("/register", async (req, res) => {
       httpOnly: true
     });
 
-    res.render("register", { success: "Registration successful!" });
+    res.render("judge", { success: "Registration successful!" });
   } catch (error) {
     console.error("Registration error:", error);
     res.status(400).render("register", { error: "Registration failed." });
@@ -74,6 +77,10 @@ app.get('/login', (req, res) => {
   res.render('login', { isAuthenticated });
 });
 
+app.get('/lawyer', (req, res) => {
+  const isAuthenticated = req.isAuthenticated; 
+  res.render('lawyer', { isAuthenticated });
+});
 
 app.post("/login", async (req, res) => {
   try {
@@ -98,7 +105,7 @@ app.post("/login", async (req, res) => {
         httpOnly: true,
       });
 
-      return res.redirect("/");
+      return res.redirect("/lawyer");
     } else {
       // Handle case where the password doesn't match
       return res.redirect("/login?error=Invalid%20email%20or%20password");
